@@ -1,0 +1,121 @@
+/* --- Reset & Basics --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    background: radial-gradient(circle at top, #0b1a14, #050807);
+    color: #c9ffe9;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- Hero Header --- */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    color: #1effa8;
+    text-shadow: 0 0 15px rgba(30, 255, 168, 0.6);
+}
+
+.hero .tagline {
+    margin-top: 15px;
+    font-size: 1.2em;
+    opacity: 0.75;
+}
+
+.hero-border {
+    width: 80px;
+    height: 3px;
+    background: #1effa8;
+    margin: 25px auto 0 auto;
+    border-radius: 2px;
+    box-shadow: 0 0 20px #1effa866;
+}
+
+/* --- Content Sections --- */
+.content {
+    max-width: 900px;
+    margin: -40px auto 60px auto;
+    padding: 40px;
+    background: rgba(8, 18, 14, 0.92);
+    border-radius: 14px;
+    border: 1px solid #1effa8;
+    box-shadow: 0 0 40px rgba(30, 255, 168, 0.15);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #1effa8;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    text-shadow: 0 0 8px rgba(30, 255, 168, 0.5);
+}
+
+p {
+    font-size: 1.05em;
+    margin-bottom: 12px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 1.05em;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9em;
+    opacity: 0.6;
+    border-top: 1px dashed rgba(30, 255, 168, 0.3);
+}
+
+/* --- Cursor Effekt --- */
+.cursor {
+    width: 10px;
+    height: 24px;
+    background-color: #1effa8;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero .tagline {
+        font-size: 1em;
+    }
+
+    .content {
+        margin: -20px 20px 40px 20px;
+        padding: 30px;
+    }
+}
