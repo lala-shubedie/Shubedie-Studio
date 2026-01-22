@@ -24,3 +24,8 @@ Learn by doing
 Mistakes are welcome – they are part of the learning process
 
 Code should be clear, fun, and inspiring
+
+Websites :
+Lala-OS : https://lala-shubedie.github.io/lala-os/
+Shubedie-Studio : https://lala-shubedie.github.io/Shubedie-Studio/
+Shubedie-Snake : https://lala-shubedie.github.io/Shubedie-Snake/
